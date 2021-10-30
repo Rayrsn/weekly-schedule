@@ -62,6 +62,7 @@ function func() {
         if (currHour >= 9 && currHour <= 12) { // 10:00 to 12:30
           if (currHour == 9 && currMin == 55 && currSec <= 10) {
             notif.play();
+            alert("کلاس آغاز شد.");
           }
           if (currHour == 9) {
             if (currMin >= 55) {
@@ -91,6 +92,7 @@ function func() {
         if (currHour >= 7 && currHour <= 10) { // 7:30 to 10:00
           if (currHour == 7 && currMin == 25 && currSec <= 10) {
             notif.play();
+            alert("کلاس آغاز شد.");
           }
           if (currHour == 7) {
             if (currMin >= 25) {
@@ -120,6 +122,7 @@ function func() {
         if (currHour >= 7 && currHour <= 10) { // 08:00 to 10:00
           if (currHour == 7 && currMin == 55 && currSec <= 10) {
             notif.play();
+            alert("کلاس آغاز شد.");
           }
           if (currHour == 7) {
             if (currMin >= 55) {
@@ -146,6 +149,7 @@ function func() {
         if (currHour >= 12 && currHour <= 15) { // 13:00 to 15:30
           if (currHour == 12 && currMin == 55 && currSec <= 10) {
             notif.play();
+            alert("کلاس آغاز شد.");
           }
         if (currHour == 12) {
           if (currMin >= 55) {
@@ -172,6 +176,7 @@ function func() {
         if (currHour >= 15 && currHour <= 18) { // 16:00 to 18:30
           if (currHour == 15 && currMin == 55 && currSec <= 10) {
             notif.play();
+            alert("کلاس آغاز شد.");
           }
           if (currHour == 15) {
             if (currMin >= 55) {
@@ -201,6 +206,7 @@ function func() {
         if (currHour >= 12 && currHour <= 15) { // 13:00 to 15:00
           if (currHour == 12 && currMin == 55 && currSec <= 10) {
             notif.play();
+            alert("کلاس آغاز شد.");
           }
           if (currHour == 12) {
             if (currMin >= 55) {
@@ -227,6 +233,7 @@ function func() {
         if (currHour >= 15 && currHour <= 18) { // 16:00 to 18:30
           if (currHour == 15 && currMin == 55 && currSec <= 10) {
             notif.play();
+            alert("کلاس آغاز شد.");
           }
           if (currHour == 15) {
             if (currMin >= 55) {
@@ -262,6 +269,7 @@ function func() {
         if (currHour >= 9 && currHour <= 11) { // 09:45 to 11:15
           if (currHour == 9 && currMin == 40 && currSec <= 10) {
             notif.play();
+            alert("کلاس آغاز شد.");
           }
           if (currHour == 9) {
             if (currMin >= 40) {
@@ -284,6 +292,7 @@ function func() {
           if (currHour >= 13 && currHour <= 16) { // 14:00 to 16:00
             if (currHour == 13 && currMin == 55 && currSec <= 10) {
               notif.play();
+              alert("کلاس آغاز شد.");
             }
           if (currHour == 13) {
             if (currMin >= 55) {
