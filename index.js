@@ -5,7 +5,7 @@ function wait(milliseconds) {
     currentDate = Date.now();
   } while (currentDate - date < milliseconds);
 }
-
+var notif = new Audio('https://github.com/Rayrsn/weekly-schedule/raw/main/notif.mp3');
 function func() {
   console.clear();
   var d = new Date();
@@ -59,7 +59,10 @@ function func() {
   switch (new Date().getDay()) {
       case 0:
         day = "Sunday";
-        if (currHour >= 9 && currHour <= 12) { // 10:00
+        if (currHour >= 9 && currHour <= 12) { // 10:00 to 12:30
+          if (currHour == 9 && currMin == 55 && currSec <= 10) {
+            notif.play();
+          }
           if (currHour == 9) {
             if (currMin >= 55) {
               computer = true;}}
@@ -86,6 +89,9 @@ function func() {
       case 1:
         day = "Monday";
         if (currHour >= 7 && currHour <= 10) { // 7:30 to 10:00
+          if (currHour == 7 && currMin == 25 && currSec <= 10) {
+            notif.play();
+          }
           if (currHour == 7) {
             if (currMin >= 25) {
               farsi = true;}}
@@ -112,6 +118,9 @@ function func() {
       case 2:
         day = "Tuesday";
         if (currHour >= 7 && currHour <= 10) { // 08:00 to 10:00
+          if (currHour == 7 && currMin == 55 && currSec <= 10) {
+            notif.play();
+          }
           if (currHour == 7) {
             if (currMin >= 55) {
               riazipish = true;}}
@@ -135,6 +144,9 @@ function func() {
       riazipish = false;
     } 
         if (currHour >= 12 && currHour <= 15) { // 13:00 to 15:30
+          if (currHour == 12 && currMin == 55 && currSec <= 10) {
+            notif.play();
+          }
         if (currHour == 12) {
           if (currMin >= 55) {
             fizik = true;}}
@@ -158,6 +170,9 @@ function func() {
     fizik = false;
   } 
         if (currHour >= 15 && currHour <= 18) { // 16:00 to 18:30
+          if (currHour == 15 && currMin == 55 && currSec <= 10) {
+            notif.play();
+          }
           if (currHour == 15) {
             if (currMin >= 55) {
               riazi = true;}}
@@ -184,6 +199,9 @@ function func() {
       case 3:
         day = "Wednesday";
         if (currHour >= 12 && currHour <= 15) { // 13:00 to 15:00
+          if (currHour == 12 && currMin == 55 && currSec <= 10) {
+            notif.play();
+          }
           if (currHour == 12) {
             if (currMin >= 55) {
               amar = true;}}
@@ -207,6 +225,9 @@ function func() {
       amar = false;
     } 
         if (currHour >= 15 && currHour <= 18) { // 16:00 to 18:30
+          if (currHour == 15 && currMin == 55 && currSec <= 10) {
+            notif.play();
+          }
           if (currHour == 15) {
             if (currMin >= 55) {
               riazi2 = true;}}
@@ -239,6 +260,9 @@ function func() {
       case 6:
         day = "Saturday";
         if (currHour >= 9 && currHour <= 11) { // 09:45 to 11:15
+          if (currHour == 9 && currMin == 40 && currSec <= 10) {
+            notif.play();
+          }
           if (currHour == 9) {
             if (currMin >= 40) {
               zaban = true;}}
@@ -258,6 +282,9 @@ function func() {
     } 
 
           if (currHour >= 13 && currHour <= 16) { // 14:00 to 16:00
+            if (currHour == 13 && currMin == 55 && currSec <= 10) {
+              notif.play();
+            }
           if (currHour == 13) {
             if (currMin >= 55) {
               eslami = true;}}
