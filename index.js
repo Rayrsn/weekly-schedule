@@ -89,25 +89,21 @@ function func() {
         break;
       case 1:
         day = "Monday";
-        if (currHour >= 7 && currHour <= 10) { // 7:30 to 10:00
-          if (currHour == 7 && currMin == 25 && currSec <= 10) {
+        if (currHour >= 8 && currHour <= 10) { // 8:30 to 10:00
+          if (currHour == 8 && currMin == 25 && currSec <= 10) {
             notif.play();
             alert("کلاس آغاز شد.");
           }
-          if (currHour == 7) {
+          if (currHour == 8) {
             if (currMin >= 25) {
               farsi = true;}}
-
-          if (currHour == 8) {
-            farsi = true;
-      }
       
           if (currHour == 9) {
             farsi = true;
       }
 
           if (currHour == 10) {
-            if (currMin <= 0) {
+            if (currMin <= 30) {
               farsi = true;
       } else {
         farsi = false;
