@@ -160,7 +160,7 @@ function func() {
     }
 
         if (currHour == 15) {
-          if (currMin <= 0) {
+          if (currMin <= 30) {
             fizik = true;
     } else {
       fizik = false;
