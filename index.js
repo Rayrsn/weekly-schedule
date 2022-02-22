@@ -16,6 +16,7 @@ function func() {
   var farsi = false;
   var riazi = false;
   var riazi2 = false;
+  var barname = false;
   var riazigos = false;
   var fizik = false;
 
@@ -56,30 +57,6 @@ function func() {
   switch (new Date().getDay()) {
       case 0:
         day = "Sunday";
-        if (currHour >= 7 && currHour <= 10) { // 7:30 to 10:15
-          if (currHour == 7 && currMin == 25 && currSec <= 10) {
-            notif.play();
-            alert("کلاس آغاز شد.");
-          }
-          if (currHour == 7) {
-            if (currMin >= 25) {
-              riazigos = true;}}
-          if (currHour == 8) {
-                riazigos = true;
-          }
-          if (currHour == 9) {
-            riazigos = true;
-          }
-          if (currHour == 10) {
-            if (currMin <= 15) {
-              riazigos = true;
-      } else {
-        riazigos = false;
-      }
-    }
-  } else {
-      riazigos = false;
-    } 
         if (currHour >= 10 && currHour <= 13) { // 10:15 to 13:00
               if (currHour == 10 && currMin == 10 && currSec <= 10) {
                 notif.play();
@@ -104,6 +81,31 @@ function func() {
       } else {
           fizik = false;
         }
+        if (currHour >= 13 && currHour <= 16) { // 13:30 to 16:15
+          if (currHour == 13 && currMin == 25 && currSec <= 10) {
+            notif.play();
+            alert("کلاس آغاز شد.");
+          }
+          if (currHour == 13) {
+            if (currMin >= 25) {
+              barname = true;}}
+      
+          if (currHour == 14) {
+            barname = true;
+          }
+          if (currHour == 15) {
+            barname = true;
+          }
+          if (currHour == 16) {
+            if (currMin <= 15) {
+              barname = true;
+      } else {
+        barname = false;
+      }
+    }
+  } else {
+      barname = false;
+    } 
         break;
       case 1:
         day = "Monday";
@@ -197,6 +199,30 @@ function func() {
         break;
       case 6:
         day = "Saturday"; 
+        if (currHour >= 7 && currHour <= 10) { // 7:30 to 10:15
+          if (currHour == 7 && currMin == 25 && currSec <= 10) {
+            notif.play();
+            alert("کلاس آغاز شد.");
+          }
+          if (currHour == 7) {
+            if (currMin >= 25) {
+              riazigos = true;}}
+          if (currHour == 8) {
+                riazigos = true;
+          }
+          if (currHour == 9) {
+            riazigos = true;
+          }
+          if (currHour == 10) {
+            if (currMin <= 15) {
+              riazigos = true;
+      } else {
+        riazigos = false;
+      }
+    }
+  } else {
+      riazigos = false;
+    } 
         if (currHour >= 13 && currHour <= 16) { // 14:00 to 16:15
           if (currHour == 13 && currMin == 55 && currSec <= 10) {
             notif.play();
@@ -243,6 +269,10 @@ function func() {
   if (!fizik) {   
       document.getElementById("fizik").style.display = "none";
   }
+  if (!barname) {   
+    document.getElementById("barname").style.display = "none";
+  }
+
 
   if (zaban) { 
     console.log("zaban is True");
@@ -268,6 +298,10 @@ function func() {
   if (fizik) {
     console.log("fizik is True");
     document.getElementById("fizik").style.display = "block";
+  }
+  if (barname) {
+    console.log("barname is True");
+    document.getElementById("barname").style.display = "block";
   }
   console.log("Today is " + day);
   console.log("and the time is " + currTime);
