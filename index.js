@@ -5,7 +5,7 @@ function wait(milliseconds) {
     currentDate = Date.now();
   } while (currentDate - date < milliseconds);
 }
-var notif = new Audio('https://github.com/Rayrsn/weekly-schedule/raw/main/notif.mp3');
+var notif = new Audio('https://rayrsn.github.io/weekly-schedule/notif.mp3');
 function func() {
   console.clear();
   var d = new Date();
